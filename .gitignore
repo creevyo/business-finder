@@ -1,0 +1,8 @@
+.DS_Store
+.env
+.agents/
+.claude/
+skills-lock.json
+__pycache__/
+*.pyc
+risn-site/
