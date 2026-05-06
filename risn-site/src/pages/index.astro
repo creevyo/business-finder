@@ -1,0 +1,1481 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base>
+  <Nav currentPage="/" />
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ════════════════════════════════════════ -->
+  <section class="hero">
+
+    <!-- Background grid -->
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+
+    <div class="hero-inner inner">
+
+      <!-- LEFT: headline block -->
+      <div class="hero-text">
+
+        <a href="#contact" class="hero-label hero-label-cta">
+          See what we'd do with your website — free
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+
+        <h1 class="hero-headline">
+          <span class="line-mask"><span class="line-reveal" style="animation-delay:0.05s">We make local</span></span>
+          <span class="line-mask"><span class="line-reveal" style="animation-delay:0.18s">businesses</span></span>
+          <span class="line-mask accent-line"><span class="line-reveal" style="animation-delay:0.31s">impossible to <em>ignore.</em></span></span>
+        </h1>
+
+        <p class="hero-sub" style="animation-delay:0.5s">
+          We build websites, run SEO, and manage ads for local businesses that are serious about winning more work. No fluff — just more enquiries.
+        </p>
+
+        <div class="hero-ctas" style="animation-delay:0.6s">
+          <a href="/contact" class="btn-primary">Start a project →</a>
+          <a href="/services" class="btn-ghost">See how we work</a>
+        </div>
+
+        <div class="hero-trust" style="animation-delay:0.72s">
+          <span>14-day delivery</span>
+          <span class="trust-sep">·</span>
+          <span>No templates</span>
+          <span class="trust-sep">·</span>
+          <span>You own everything</span>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: results snapshot card -->
+      <div class="results-card">
+        <div class="rc-top-bar"></div>
+
+        <div class="rc-header">
+          <span class="rc-title">Results Snapshot</span>
+          <span class="rc-live" aria-label="Live data">
+            <span class="rc-live-dot" aria-hidden="true"></span>
+            Live
+          </span>
+        </div>
+
+        <div class="rc-grid">
+          <div class="rc-stat">
+            <div class="rc-num">
+              <span class="rc-count" data-target="3">0</span><span class="rc-suffix">×</span>
+            </div>
+            <div class="rc-lbl">More enquiries</div>
+          </div>
+          <div class="rc-stat">
+            <div class="rc-num">
+              <span class="rc-count" data-target="90">0</span><span class="rc-suffix">+</span>
+            </div>
+            <div class="rc-lbl">PageSpeed score</div>
+          </div>
+          <div class="rc-stat">
+            <div class="rc-num">
+              <span class="rc-count" data-target="14">0</span><span class="rc-suffix">d</span>
+            </div>
+            <div class="rc-lbl">Average delivery</div>
+          </div>
+          <div class="rc-stat">
+            <div class="rc-num">
+              £<span class="rc-count" data-target="0">0</span>
+            </div>
+            <div class="rc-lbl">Hidden fees</div>
+          </div>
+        </div>
+
+        <div class="rc-divider"></div>
+
+        <div class="rc-quote">
+          <p>"Phone hadn't stopped since we went live."</p>
+          <cite>— D. Hartley, Hartley Roofing</cite>
+        </div>
+
+        <a href="/contact" class="rc-audit-link">Get a free audit →</a>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       TICKER
+  ════════════════════════════════════════ -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      {[
+        'Web Design','SEO','Google Ads','Social Content',
+        'Fast Delivery','Local Business Experts',
+        'No Hidden Fees','Mobile-First',
+        'Web Design','SEO','Google Ads','Social Content',
+        'Fast Delivery','Local Business Experts',
+        'No Hidden Fees','Mobile-First',
+      ].map(item => (
+        <span class="ticker-item">
+          <span class="ticker-dot"></span>
+          {item}
+        </span>
+      ))}
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       SERVICES — interactive rows
+  ════════════════════════════════════════ -->
+  <section class="section services-section" id="services">
+    <div class="inner">
+
+      <div class="services-header reveal">
+        <span class="eyebrow">What we do</span>
+        <h2>Four services.<br>One clear goal.</h2>
+      </div>
+
+      <div class="service-rows" role="list">
+
+        <div class="service-row reveal" role="listitem" data-index="0">
+          <button class="service-row-btn" aria-expanded="false">
+            <span class="svc-num">01</span>
+            <span class="svc-name">Web Design &amp; Development</span>
+            <span class="svc-tag">From £699</span>
+            <span class="svc-arrow" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </button>
+          <div class="svc-body">
+            <div class="svc-body-inner">
+              <p>Fast, bespoke websites built from the ground up to convert visitors into enquiries. No page builders, no bloated themes — clean code, 90+ PageSpeed score, and a site that actually represents your business.</p>
+              <a href="/services#web" class="svc-link">Explore this service →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-row reveal reveal-delay-1" role="listitem" data-index="1">
+          <button class="service-row-btn" aria-expanded="false">
+            <span class="svc-num">02</span>
+            <span class="svc-name">Search Engine Optimisation</span>
+            <span class="svc-tag">Local SEO</span>
+            <span class="svc-arrow" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </button>
+          <div class="svc-body">
+            <div class="svc-body-inner">
+              <p>Get found when someone searches for your service in your area. Google Business Profile, local keywords, on-page SEO, and citation building — everything it takes to rank above your competitors when it counts.</p>
+              <a href="/services#seo" class="svc-link">Explore this service →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-row reveal reveal-delay-2" role="listitem" data-index="2">
+          <button class="service-row-btn" aria-expanded="false">
+            <span class="svc-num">03</span>
+            <span class="svc-name">Pay Per Click</span>
+            <span class="svc-tag">Google Ads</span>
+            <span class="svc-arrow" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </button>
+          <div class="svc-body">
+            <div class="svc-body-inner">
+              <p>Campaigns that pay for themselves. Tight targeting, tested ad copy, and conversion tracking so you know exactly where every pound goes. No wasted budget — just calls and form fills from people who are ready to buy.</p>
+              <a href="/services#ppc" class="svc-link">Explore this service →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-row reveal reveal-delay-3" role="listitem" data-index="3">
+          <button class="service-row-btn" aria-expanded="false">
+            <span class="svc-num">04</span>
+            <span class="svc-name">Social Media Content</span>
+            <span class="svc-tag">Content packs</span>
+            <span class="svc-arrow" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </button>
+          <div class="svc-body">
+            <div class="svc-body-inner">
+              <p>Posts written and ready to publish — by people who understand your trade. We don't manage your social for you, we give you a month's worth of content that actually sounds like you. No cringe, no buzzwords.</p>
+              <a href="/pricing#social" class="svc-link">See content packs →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       STATS — large animated counters
+  ════════════════════════════════════════ -->
+  <div class="stats-section">
+    <div class="inner stats-inner">
+      <div class="stat-block reveal">
+        <div class="stat-number" data-target="3" data-suffix="×">0×</div>
+        <div class="stat-label">Average increase<br>in enquiries</div>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat-block reveal reveal-delay-1">
+        <div class="stat-number" data-target="90" data-suffix="+">0+</div>
+        <div class="stat-label">PageSpeed score<br>on every build</div>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat-block reveal reveal-delay-2">
+        <div class="stat-number" data-target="14" data-suffix="d">0d</div>
+        <div class="stat-label">Average website<br>delivery time</div>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat-block reveal reveal-delay-3">
+        <div class="stat-number" data-suffix="">£0</div>
+        <div class="stat-label">Hidden fees.<br>Ever.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       WHO WE WORK WITH
+  ════════════════════════════════════════ -->
+  <section class="section sectors-section" id="work">
+    <div class="inner sectors-inner">
+
+      <div class="sectors-left reveal">
+        <span class="eyebrow">Who we work with</span>
+        <h2>Built for the<br>businesses that<br>make places work.</h2>
+        <p class="sectors-sub">We specialise in local trade and service businesses — where reputation is earned by hand and a great website changes everything.</p>
+        <a href="/contact" class="btn-primary" style="margin-top:8px">Is this you? Let's talk →</a>
+      </div>
+
+      <div class="sectors-right reveal reveal-delay-2">
+        <div class="sector-group">
+          <div class="sector-group-title">Home Improvements</div>
+          <div class="sector-list">
+            <span class="sector-item active">Roofers</span>
+            <span class="sector-item">Builders</span>
+            <span class="sector-item">Landscapers</span>
+            <span class="sector-item">Kitchen &amp; Bathroom</span>
+            <span class="sector-item">Window &amp; Door Fitters</span>
+            <span class="sector-item">Electricians</span>
+            <span class="sector-item">Plumbers</span>
+            <span class="sector-item">Decorators</span>
+          </div>
+        </div>
+        <div class="sector-group">
+          <div class="sector-group-title">Hospitality &amp; Food</div>
+          <div class="sector-list">
+            <span class="sector-item">Restaurants &amp; Cafes</span>
+            <span class="sector-item">Takeaways</span>
+            <span class="sector-item">Hotels &amp; B&amp;Bs</span>
+            <span class="sector-item">Bars &amp; Venues</span>
+          </div>
+        </div>
+        <div class="sector-group">
+          <div class="sector-group-title">Service Businesses</div>
+          <div class="sector-list">
+            <span class="sector-item">Cleaning Companies</span>
+            <span class="sector-item">Gyms &amp; Fitness</span>
+            <span class="sector-item">Beauty &amp; Salons</span>
+            <span class="sector-item">Childcare</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PROCESS
+  ════════════════════════════════════════ -->
+  <section class="section process-section">
+    <div class="inner">
+      <div class="reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>Simple. Fast.<br>No surprises.</h2>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="ps-num">01</div>
+          <div class="ps-content">
+            <div class="ps-title">Discovery call</div>
+            <p class="ps-desc">A 20-minute conversation about your business, your goals, and who your customers are. No jargon, no sales pitch.</p>
+          </div>
+        </div>
+        <div class="process-step reveal reveal-delay-1">
+          <div class="ps-num">02</div>
+          <div class="ps-content">
+            <div class="ps-title">Clear proposal</div>
+            <p class="ps-desc">A fixed-price proposal with scope, timeline, and deliverables. Agreed before we touch a single line of code or run a single ad.</p>
+          </div>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="ps-num">03</div>
+          <div class="ps-content">
+            <div class="ps-title">Build &amp; launch</div>
+            <p class="ps-desc">Fast turnaround, regular updates. Most sites are live within 14 days. You see everything before it goes public.</p>
+          </div>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="ps-num">04</div>
+          <div class="ps-content">
+            <div class="ps-title">Grow</div>
+            <p class="ps-desc">We stay in your corner. Ongoing SEO, PPC, and content — with monthly reports in plain English, not agency speak.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       TESTIMONIAL
+  ════════════════════════════════════════ -->
+  <!-- TODO: Replace with 2-3 real verified testimonials and build a slider -->
+  <section class="testimonial-section reveal">
+    <div class="inner testimonial-inner">
+      <div class="testimonial-body">
+        <div class="t-quote-mark" aria-hidden="true">"</div>
+        <blockquote class="t-quote">Within 6 weeks of the new site going live, our phone hadn't stopped. Best investment we've made as a business.</blockquote>
+        <footer class="t-author">
+          <div class="t-name">D. Hartley</div>
+          <div class="t-company">Hartley Roofing</div>
+        </footer>
+      </div>
+      <div class="t-aside" aria-hidden="true">
+        <div class="t-aside-stat">
+          <div class="t-aside-num">3×</div>
+          <div class="t-aside-lbl">enquiries after launch</div>
+        </div>
+        <div class="t-aside-divider"></div>
+        <div class="t-aside-stat">
+          <div class="t-aside-num">6wk</div>
+          <div class="t-aside-lbl">to see real results</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CTA + FORM
+  ════════════════════════════════════════ -->
+  <section class="section cta-section" id="contact">
+    <div class="inner cta-inner">
+
+      <div class="cta-left reveal">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Ready to be<br>impossible to ignore?</h2>
+        <p class="cta-sub">Tell us about your business — we'll come back to you within one working day with an honest view of what's possible.</p>
+        <div class="cta-points">
+          <div class="cta-point">
+            <span class="cta-point-dot"></span>
+            No obligation
+          </div>
+          <div class="cta-point">
+            <span class="cta-point-dot"></span>
+            Fixed-price proposals only
+          </div>
+          <div class="cta-point">
+            <span class="cta-point-dot"></span>
+            Reply within one business day
+          </div>
+        </div>
+      </div>
+
+      <form class="cta-form reveal reveal-delay-2" id="ctaForm" name="homepage-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="homepage-enquiry" />
+        <p style="display:none"><label>Skip: <input name="bot-field" /></label></p>
+
+        <div class="form-field">
+          <label for="cf-name">Your name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Jane Smith" autocomplete="name" required />
+        </div>
+        <div class="form-field">
+          <label for="cf-business">Business name</label>
+          <input type="text" id="cf-business" name="business" placeholder="Smith Roofing Ltd" />
+        </div>
+        <div class="form-field">
+          <label for="cf-email">Email address</label>
+          <input type="email" id="cf-email" name="email" placeholder="jane@smithroofing.co.uk" autocomplete="email" required />
+        </div>
+        <div class="form-field">
+          <label for="cf-msg">Briefly, what do you need?</label>
+          <textarea id="cf-msg" name="message" rows="3" placeholder="New website, SEO, ads — or not sure yet?"></textarea>
+        </div>
+        <button type="submit" class="btn-primary form-submit">
+          <span class="btn-text">Send it over →</span>
+          <span class="btn-loading" aria-hidden="true">Sending…</span>
+        </button>
+        <div class="form-success" id="formSuccess" aria-live="polite">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Got it — we'll be in touch within a working day.
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <Footer />
+</Base>
+
+<!-- ═══════════════════════════════════════════════════════
+     STYLES
+════════════════════════════════════════════════════════ -->
+<style>
+
+  /* ── Hero ─────────────────────────────── */
+  .hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px var(--section-px) 80px;
+    overflow: hidden;
+  }
+
+  .hero-grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black, transparent);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    position: relative;
+  }
+
+  /* Hero CTA label */
+  .hero-label-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: var(--orange);
+    margin-bottom: 24px;
+    text-decoration: none;
+    animation: fadeUp 0.5s ease both;
+    border: 1px solid rgba(255,92,0,0.32);
+    background: rgba(255,92,0,0.08);
+    padding: 7px 14px;
+    border-radius: 3px;
+    transition: background 0.2s, border-color 0.2s, gap 0.2s;
+    align-self: flex-start;
+  }
+
+  .hero-label-cta:hover {
+    background: rgba(255,92,0,0.15);
+    border-color: rgba(255,92,0,0.55);
+    gap: 12px;
+  }
+
+  /* Headline */
+  .hero-headline {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.8rem, 10vw, 6rem);
+    line-height: 1.0;
+    letter-spacing: -0.04em;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 28px;
+  }
+
+  .line-mask {
+    display: block;
+    overflow: hidden;
+  }
+
+  .line-reveal {
+    display: block;
+    animation: slideUp 0.75s cubic-bezier(0.16,1,0.3,1) both;
+  }
+
+  .accent-line { color: inherit; }
+  .accent-line em { font-style: normal; color: var(--orange); }
+
+  @keyframes slideUp {
+    from { translate: 0 105%; opacity: 0; }
+    to   { translate: 0 0;    opacity: 1; }
+  }
+
+  /* Sub + CTA */
+  .hero-sub {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 440px;
+    margin-bottom: 32px;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .hero-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 28px;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .hero-trust {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.76rem;
+    color: rgba(255,255,255,0.3);
+    font-weight: 400;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .trust-sep { color: rgba(255,255,255,0.12); }
+
+  /* ── Results snapshot card ───────────── */
+  .results-card {
+    background: var(--charcoal-mid);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeUp 0.7s 0.35s ease both;
+  }
+
+  .hero-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, var(--orange) 0%, transparent 60%);
+  }
+
+  .hero-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .hero-card-label {
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: rgba(255,255,255,0.3);
+    font-weight: 500;
+  }
+
+  .hero-card-live {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.62rem;
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
+
+  .hero-card-live span {
+    width: 5px; height: 5px;
+    background: var(--orange);
+    border-radius: 50%;
+    animation: pulse 2s ease infinite;
+  }
+
+  .hero-metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .metric-val {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+  .metric-val span { color: var(--orange); }
+  /* ── Results card inner elements ──────── */
+  .rc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .rc-title {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(255,255,255,0.3);
+    font-weight: 500;
+  }
+
+  .rc-live {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #22c55e;
+    font-weight: 600;
+  }
+
+  .rc-live-dot {
+    width: 6px; height: 6px;
+    background: #22c55e;
+    border-radius: 50%;
+    animation: pulse 2s ease infinite;
+    box-shadow: 0 0 6px rgba(34,197,94,0.6);
+  }
+
+  .rc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 16px;
+    margin-bottom: 22px;
+  }
+
+  .rc-num {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: baseline;
+    gap: 1px;
+  }
+
+  .rc-suffix { color: var(--orange); }
+
+  .rc-lbl {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.38);
+    font-weight: 400;
+    line-height: 1.3;
+  }
+
+  .rc-divider {
+    height: 1px;
+    background: rgba(255,255,255,0.07);
+    margin-bottom: 20px;
+  }
+
+  .rc-quote { margin-bottom: 18px; }
+
+  .rc-quote p {
+    font-size: 0.84rem;
+    color: rgba(255,255,255,0.52);
+    line-height: 1.65;
+    font-style: italic;
+    margin-bottom: 7px;
+  }
+
+  .rc-quote cite {
+    font-size: 0.68rem;
+    color: rgba(255,255,255,0.22);
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .rc-audit-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--orange);
+    text-decoration: none;
+    transition: gap 0.2s;
+  }
+
+  .rc-audit-link:hover { gap: 9px; }
+
+  /* Scroll hint */
+  .scroll-hint {
+    position: absolute;
+    bottom: 32px;
+    left: var(--section-px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: rgba(255,255,255,0.2);
+    font-weight: 500;
+    animation: fadeUp 1s 0.9s ease both;
+  }
+
+  .scroll-line {
+    width: 28px;
+    height: 1px;
+    background: rgba(255,255,255,0.15);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .scroll-line::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--orange);
+    animation: scrollPulse 2s ease infinite;
+  }
+
+  @keyframes scrollPulse {
+    0%   { transform: translateX(-100%); }
+    50%  { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+  }
+
+  /* ── Ticker ───────────────────────────── */
+  .ticker-wrap {
+    overflow: hidden;
+    border-top: 2px solid var(--orange);
+    border-bottom: 2px solid var(--orange);
+    padding: 13px 0;
+    background: #160900;
+  }
+
+  .ticker-track {
+    display: flex;
+    width: max-content;
+    animation: marqueeScroll 28s linear infinite;
+  }
+
+  .ticker-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 28px;
+    font-size: 0.67rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .ticker-dot {
+    width: 4px; height: 4px;
+    background: var(--orange);
+    border-radius: 50%;
+    opacity: 1;
+    flex-shrink: 0;
+  }
+
+  /* ── Services ─────────────────────────── */
+  .services-section { background: var(--charcoal); }
+
+  .services-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+  }
+
+  .services-header h2 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+  }
+
+  .service-rows {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-row {
+    border-top: 1px solid var(--subtle);
+  }
+
+  .service-row:last-child {
+    border-bottom: 1px solid var(--subtle);
+  }
+
+  .service-row-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 0;
+    text-align: left;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .service-row-btn:hover .svc-name,
+  .service-row.open .svc-name {
+    color: var(--white);
+  }
+
+  .svc-num {
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--orange);
+    min-width: 24px;
+    flex-shrink: 0;
+  }
+
+  .svc-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.1rem, 3vw, 1.6rem);
+    letter-spacing: -0.02em;
+    color: rgba(255,255,255,0.65);
+    flex: 1;
+    transition: color 0.2s;
+  }
+
+  .svc-tag {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.22);
+    font-weight: 400;
+    display: none;
+    white-space: nowrap;
+  }
+
+  .svc-arrow {
+    color: rgba(255,255,255,0.25);
+    flex-shrink: 0;
+    transition: color 0.2s, rotate 0.3s cubic-bezier(0.16,1,0.3,1);
+  }
+
+  .service-row.open .svc-arrow {
+    rotate: 90deg;
+    color: var(--orange);
+  }
+
+  .service-row-btn:hover .svc-arrow {
+    color: rgba(255,255,255,0.6);
+  }
+
+  /* Body expand */
+  .svc-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.38s cubic-bezier(0.16,1,0.3,1);
+  }
+
+  .service-row.open .svc-body {
+    grid-template-rows: 1fr;
+  }
+
+  .svc-body-inner {
+    overflow: hidden;
+    padding-bottom: 0;
+    transition: padding-bottom 0.38s cubic-bezier(0.16,1,0.3,1);
+  }
+
+  .service-row.open .svc-body-inner {
+    padding-bottom: 28px;
+  }
+
+  .svc-body-inner p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 580px;
+    padding-left: 40px;
+    margin-bottom: 14px;
+  }
+
+  .svc-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.82rem;
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: gap 0.2s;
+  }
+
+  .svc-link:hover { gap: 8px; }
+
+  /* ── Stats ────────────────────────────── */
+  .stats-section {
+    background: var(--charcoal-mid);
+    border-top: 1px solid var(--subtle);
+    border-bottom: 1px solid var(--subtle);
+    padding: 56px var(--section-px);
+  }
+
+  .stats-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    align-items: center;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .stat-block {
+    padding: 20px 16px;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.8rem, 8vw, 5rem);
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  .stat-label {
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  /* ── Sectors ──────────────────────────── */
+  .sectors-section { background: var(--charcoal); }
+
+  .sectors-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  .sectors-left h2 {
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    margin-bottom: 16px;
+  }
+
+  .sectors-sub {
+    font-size: 0.92rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 380px;
+    margin-bottom: 28px;
+  }
+
+  .sectors-right {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .sector-group-title {
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 12px;
+  }
+
+  .sector-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .sector-item {
+    font-size: 0.83rem;
+    color: rgba(255,255,255,0.42);
+    border: 1px solid rgba(255,255,255,0.09);
+    padding: 6px 13px;
+    border-radius: 3px;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+    cursor: default;
+  }
+
+  .sector-item.active,
+  .sector-item:hover {
+    color: var(--orange);
+    border-color: rgba(255,92,0,0.3);
+    background: rgba(255,92,0,0.05);
+  }
+
+  /* ── Process ──────────────────────────── */
+  .process-section {
+    background: var(--charcoal-mid);
+    border-top: 1px solid var(--subtle);
+    border-bottom: 1px solid var(--subtle);
+  }
+
+  .process-section h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 48px;
+  }
+
+  .process-steps {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .process-step {
+    display: flex;
+    gap: 20px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--subtle);
+  }
+
+  .process-step:last-child { border-bottom: none; }
+
+  .ps-num {
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    font-weight: 500;
+    color: var(--orange);
+    letter-spacing: 0.1em;
+    min-width: 24px;
+    padding-top: 4px;
+    flex-shrink: 0;
+  }
+
+  .ps-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 7px;
+  }
+
+  .ps-desc {
+    font-size: 0.87rem;
+    color: var(--muted);
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  /* ── Testimonial ──────────────────────── */
+  .testimonial-section {
+    background: var(--orange);
+    padding: var(--section-py) var(--section-px);
+  }
+
+  .testimonial-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .t-quote-mark {
+    font-family: var(--font-display);
+    font-size: 5rem;
+    line-height: 0.8;
+    color: rgba(0,0,0,0.12);
+    margin-bottom: -8px;
+  }
+
+  .t-quote {
+    font-family: var(--font-display);
+    font-size: clamp(1.3rem, 4vw, 2rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.35;
+    color: rgba(0,0,0,0.82);
+    max-width: 640px;
+    margin-bottom: 20px;
+  }
+
+  .t-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: rgba(0,0,0,0.65);
+  }
+
+  .t-company {
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.42);
+    font-weight: 400;
+    margin-top: 2px;
+  }
+
+  .t-aside {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .t-aside-num {
+    font-family: var(--font-display);
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: rgba(0,0,0,0.75);
+  }
+
+  .t-aside-lbl {
+    font-size: 0.76rem;
+    color: rgba(0,0,0,0.45);
+    font-weight: 400;
+    margin-top: 3px;
+  }
+
+  .t-aside-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(0,0,0,0.15);
+  }
+
+  /* ── CTA + Form ───────────────────────── */
+  .cta-section { background: var(--charcoal); }
+
+  .cta-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  .cta-left h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 16px;
+  }
+
+  .cta-sub {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 400px;
+    margin-bottom: 28px;
+  }
+
+  .cta-points {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta-point {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.86rem;
+    color: rgba(255,255,255,0.55);
+  }
+
+  .cta-point-dot {
+    width: 5px; height: 5px;
+    background: var(--orange);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* Form */
+  .cta-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  label {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.5);
+  }
+
+  input, textarea {
+    background: var(--charcoal-mid);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 4px;
+    padding: 13px 16px;
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 400;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.2); }
+  input:focus, textarea:focus {
+    border-color: rgba(255,92,0,0.5);
+    background: var(--charcoal-light);
+  }
+
+  textarea { resize: vertical; min-height: 90px; line-height: 1.65; }
+
+  .form-submit {
+    justify-content: center;
+    padding: 15px;
+    font-size: 0.92rem;
+    margin-top: 4px;
+    position: relative;
+  }
+
+  .btn-loading { display: none; }
+  .form-submit.loading .btn-text { display: none; }
+  .form-submit.loading .btn-loading { display: inline; }
+
+  .form-success {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    background: rgba(255,92,0,0.07);
+    border: 1px solid rgba(255,92,0,0.2);
+    border-radius: 4px;
+    color: var(--orange);
+    font-size: 0.88rem;
+    font-weight: 500;
+  }
+
+  .form-success.show { display: flex; }
+
+  /* ══ DESKTOP ══════════════════════════════ */
+  @media (min-width: 768px) {
+
+    /* Hero */
+    .hero {
+      padding: 140px var(--section-px) 100px;
+      min-height: auto;
+    }
+
+    .hero-inner {
+      flex-direction: row;
+      align-items: center;
+      gap: 64px;
+    }
+
+    .hero-text { flex: 1; }
+
+    .hero-carousel {
+      flex: 0 0 340px;
+      align-self: center;
+    }
+
+    /* Services */
+    .svc-tag { display: block; }
+
+    /* Stats */
+    .stats-inner {
+      grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+    }
+
+    .stat-divider {
+      display: block;
+      width: 1px;
+      height: 64px;
+      background: var(--subtle);
+    }
+
+    .stat-block { text-align: left; padding: 20px 32px; }
+    .stat-block:first-child { padding-left: 0; }
+
+    /* Sectors */
+    .sectors-inner {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 80px;
+    }
+
+    .sectors-left { flex: 0 0 340px; }
+    .sectors-right { flex: 1; }
+
+    /* Process */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .process-step {
+      flex-direction: column;
+      padding: 28px 24px;
+      border-bottom: none;
+      border-right: 1px solid var(--subtle);
+    }
+
+    .process-step:first-child { padding-left: 0; }
+    .process-step:last-child { border-right: none; }
+
+    /* Testimonial */
+    .testimonial-inner {
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 60px;
+    }
+
+    .testimonial-body { flex: 1; }
+
+    .t-aside {
+      flex-direction: column;
+      flex-shrink: 0;
+      text-align: right;
+      gap: 20px;
+    }
+
+    .t-aside-divider {
+      width: 40px;
+      height: 1px;
+      align-self: flex-end;
+    }
+
+    /* CTA */
+    .cta-inner {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 80px;
+    }
+
+    .cta-left { flex: 0 0 360px; }
+    .cta-form { flex: 1; }
+  }
+
+  @media (min-width: 1100px) {
+    .results-card { flex: 0 0 400px; }
+  }
+
+</style>
+
+<!-- ═══════════════════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════════════════ -->
+<script>
+  // ── Scroll reveal ────────────────────────────
+  const ro = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }),
+    { threshold: 0.07 }
+  );
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+  // ── Service rows accordion ───────────────────
+  document.querySelectorAll('.service-row').forEach(row => {
+    const btn = row.querySelector('.service-row-btn') as HTMLButtonElement;
+    btn?.addEventListener('click', () => {
+      const isOpen = row.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(isOpen));
+      // Close others
+      document.querySelectorAll('.service-row.open').forEach(other => {
+        if (other !== row) {
+          other.classList.remove('open');
+          (other.querySelector('.service-row-btn') as HTMLButtonElement)?.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  });
+
+  // Desktop: open on hover, close on leave
+  if (window.matchMedia('(hover: hover)').matches) {
+    document.querySelectorAll('.service-row').forEach(row => {
+      row.addEventListener('mouseenter', () => {
+        row.classList.add('open');
+        (row.querySelector('.service-row-btn') as HTMLButtonElement)?.setAttribute('aria-expanded', 'true');
+      });
+      row.addEventListener('mouseleave', () => {
+        row.classList.remove('open');
+        (row.querySelector('.service-row-btn') as HTMLButtonElement)?.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  // ── Animated stat counters ───────────────────
+  const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target as HTMLElement;
+      const target = parseInt(el.dataset.target ?? '0');
+      const suffix = el.dataset.suffix ?? '';
+      if (!target) return;
+
+      const duration = 1600;
+      const start = performance.now();
+
+      function tick(now: number) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(eased * target) + suffix;
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      counterObserver.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.stat-number[data-target]').forEach(el => {
+    counterObserver.observe(el);
+  });
+
+  // ── Results card counters (page load) ────────
+  document.querySelectorAll<HTMLElement>('.rc-count[data-target]').forEach(el => {
+    const target = parseInt(el.dataset.target ?? '0');
+    if (!target) return;
+    const duration = 1400;
+    const start = performance.now();
+    function tick(now: number) {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = String(Math.round(eased * target));
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    setTimeout(() => requestAnimationFrame(tick), 400);
+  });
+
+  // ── Contact form ─────────────────────────────
+  const form = document.getElementById('ctaForm') as HTMLFormElement;
+  const submitBtn = form?.querySelector('.form-submit') as HTMLButtonElement;
+  const successMsg = document.getElementById('formSuccess');
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    submitBtn.classList.add('loading');
+    submitBtn.disabled = true;
+
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form) as any).toString(),
+      });
+      if (res.ok) {
+        form.reset();
+        submitBtn.style.display = 'none';
+        successMsg?.classList.add('show');
+      } else throw new Error();
+    } catch {
+      submitBtn.classList.remove('loading');
+      submitBtn.disabled = false;
+      alert('Something went wrong — please try emailing us directly.');
+    }
+  });
+</script>

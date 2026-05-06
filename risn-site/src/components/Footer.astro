@@ -1,0 +1,145 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">Risn<span>.</span></a>
+      <p class="footer-tagline">Web Design · SEO · PPC for local businesses</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <a href="/services#web">Web Design & Dev</a>
+        <a href="/services#seo">SEO</a>
+        <a href="/services#ppc">PPC</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Company</div>
+        <a href="/pricing">Pricing</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      © {year} Risn — a trading name of OAS Digital Ltd · Registered in England &amp; Wales
+    </div>
+    <div class="footer-links">
+      <!-- TODO: Add real Privacy & Terms pages -->
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      <!-- TODO: Add real LinkedIn URL -->
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    border-top: 1px solid var(--subtle);
+    padding: 56px 20px 32px;
+  }
+
+  .footer-inner {
+    max-width: 1120px;
+    margin: 0 auto 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: var(--white);
+    text-decoration: none;
+  }
+  .footer-logo span { color: var(--orange); }
+
+  .footer-tagline {
+    margin-top: 8px;
+    font-size: 0.82rem;
+    color: var(--muted);
+    font-weight: 300;
+  }
+
+  .footer-nav {
+    display: flex;
+    gap: 48px;
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-col-title {
+    font-size: 0.7rem;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  .footer-col a {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.45);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--white); }
+
+  .footer-bottom {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-top: 24px;
+    border-top: 1px solid var(--subtle);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .footer-legal {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.2);
+    line-height: 1.6;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-links a {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.28);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--white); }
+
+  @media (min-width: 768px) {
+    footer { padding: 64px 48px 40px; }
+
+    .footer-inner {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer-bottom {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+</style>

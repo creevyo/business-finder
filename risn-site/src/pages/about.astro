@@ -1,0 +1,268 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base title="About — Risn" description="Risn is a digital agency for local trade and service businesses. A trading name of OAS Digital Ltd, registered in England & Wales.">
+  <Nav currentPage="/about" />
+
+  <main>
+    <section class="page-hero section">
+      <div class="section-inner">
+        <div class="reveal">
+          <span class="eyebrow">About Risn</span>
+          <h1>We're in your corner,<br>not just <em>on your case</em></h1>
+          <p class="hero-sub">We started Risn because local businesses deserve the same quality of digital work that big brands get — without the agency overhead and the vague monthly invoices.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="section alt-section">
+      <div class="section-inner about-grid reveal">
+        <div>
+          <span class="eyebrow">Why we exist</span>
+          <h2>Digital should work<br>for everyone</h2>
+        </div>
+        <div class="about-body">
+          <!-- TODO: Replace with real founder bio / company story -->
+          <p>Most digital agencies are built for corporate retainers and enterprise clients. Local tradespeople, builders, and service businesses get treated as an afterthought — or charged through the nose for a template site and zero strategic thinking.</p>
+          <p>Risn is different. We work exclusively with trade and service businesses, which means we understand your customers, your seasonality, and what it actually takes to win work locally. We don't need to learn your industry from scratch every time.</p>
+          <p>We're small on purpose. That means you get direct access to the people doing the work — not a rotating cast of account managers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section">
+      <div class="section-inner">
+        <div class="reveal">
+          <span class="eyebrow">How we operate</span>
+          <h2>A few things we<br>take seriously</h2>
+        </div>
+        <div class="values-grid reveal">
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>No hidden fees</h3>
+            <p>You'll know exactly what you're paying before we start, and it won't change. If scope creeps, we'll flag it before it costs you more.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Fast delivery</h3>
+            <p>We don't sit on briefs. A typical website is live in 14 days. SEO and PPC campaigns are up and running within a week of onboarding.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Plain English reporting</h3>
+            <p>No jargon, no vanity metrics. Every report tells you what happened, what it means, and what we're doing next.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>You own everything</h3>
+            <p>Your website, your domain, your ad accounts. We're contractors, not landlords. If you ever move on, it all stays with you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legal / trust -->
+    <section class="section trust-section">
+      <div class="section-inner reveal">
+        <span class="eyebrow">Company info</span>
+        <div class="trust-grid">
+          <div class="trust-item">
+            <div class="trust-label">Trading name</div>
+            <div class="trust-value">Risn</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-label">Registered company</div>
+            <div class="trust-value">OAS Digital Ltd</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-label">Registered in</div>
+            <div class="trust-value">England & Wales</div>
+          </div>
+          <!-- TODO: Add real company number once confirmed -->
+          <div class="trust-item">
+            <div class="trust-label">Company number</div>
+            <div class="trust-value trust-placeholder">[Add company number]</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+      <div class="section-inner cta-inner reveal">
+        <h2>Want to work together?</h2>
+        <p class="cta-sub">We only take on clients we're confident we can get great results for. Let's have a chat and find out if we're a fit.</p>
+        <a href="/contact" class="btn-primary">Start the conversation →</a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Base>
+
+<style>
+  main { padding-top: 80px; }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.2rem, 7vw, 3.6rem);
+    letter-spacing: -1.5px;
+    line-height: 1.05;
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+
+  h1 em { font-style: normal; color: var(--orange); }
+
+  .hero-sub {
+    font-size: 1.05rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 540px;
+  }
+
+  .alt-section { background: var(--charcoal-mid); }
+
+  /* About grid */
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .about-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .about-body p {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.85;
+    font-weight: 300;
+  }
+
+  /* Values */
+  .values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    margin-top: 40px;
+  }
+
+  .value-card {
+    background: var(--charcoal-mid);
+    border-radius: 10px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .value-icon {
+    width: 40px; height: 40px;
+    background: rgba(255,92,0,0.1);
+    border: 1px solid rgba(255,92,0,0.18);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    margin-bottom: 4px;
+  }
+
+  .value-card h3 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+  .value-card p {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  /* Trust section */
+  .trust-section { border-top: 1px solid var(--subtle); }
+
+  .trust-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .trust-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  .trust-value {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .trust-placeholder { color: rgba(255,92,0,0.6); font-style: italic; font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.88rem; }
+
+  /* CTA */
+  .cta-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px;
+  }
+
+  .cta-sub {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: 768px) {
+    .about-grid {
+      flex-direction: row;
+      gap: 80px;
+      align-items: flex-start;
+    }
+
+    .about-grid > :first-child { flex: 0 0 300px; }
+    .about-body { flex: 1; }
+
+    .values-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .trust-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+</style>
+
+<script>
+  const ro = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }),
+    { threshold: 0.07 }
+  );
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+</script>

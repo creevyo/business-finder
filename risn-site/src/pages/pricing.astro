@@ -1,0 +1,847 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base title="Pricing — Risn" description="Transparent pricing for web design, hosting, email, Google Business Profile setup, and social content. No VAT, no hidden fees.">
+  <Nav currentPage="/pricing" />
+
+  <main>
+
+    <!-- Page hero -->
+    <section class="section page-hero">
+      <div class="section-inner">
+        <div class="reveal">
+          <span class="eyebrow">Pricing</span>
+          <h1>The price you see is<br>the price you <em>pay</em></h1>
+          <p class="hero-sub">No VAT, no hidden fees, no surprises. Everything is fixed-price unless we say otherwise — and we'll always tell you before we start.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEBSITE BUILDS -->
+    <section class="section" id="websites">
+      <div class="section-inner">
+        <div class="reveal">
+          <span class="eyebrow">Website builds — one-time fee</span>
+          <h2>Your site, built and delivered.<br>Nothing for you to manage.</h2>
+        </div>
+
+        <div class="build-grid reveal">
+          <!-- Standard -->
+          <div class="plan-card featured">
+            <div class="plan-card-bar"></div>
+            <div class="plan-badge">Most popular</div>
+            <div class="plan-name">Standard</div>
+            <div class="plan-pages">Up to 6 pages</div>
+            <div class="plan-price">£699<span class="plan-freq">one-time</span></div>
+            <ul class="plan-features">
+              <li>Home, about &amp; contact</li>
+              <li>Mobile responsive</li>
+              <li>Gallery / events page</li>
+              <li>Menu or services page</li>
+              <li>Payment &amp; booking links</li>
+              <li>Custom domain setup</li>
+            </ul>
+            <a href="/contact?service=Standard+Website+Build" class="btn-primary">Get started →</a>
+          </div>
+
+          <!-- Premium -->
+          <div class="plan-card">
+            <div class="plan-name">Premium</div>
+            <div class="plan-pages">Up to 10 pages</div>
+            <div class="plan-price">£999<span class="plan-price-plus">+</span><span class="plan-freq">one-time</span></div>
+            <p class="plan-note">Price depends on features required — we'll quote before we start.</p>
+            <ul class="plan-features">
+              <li>Everything in Standard</li>
+              <li>Online booking system</li>
+              <li>Multiple payment links</li>
+              <li>FAQ &amp; testimonials section</li>
+              <li>Priority turnaround</li>
+            </ul>
+            <a href="/contact?service=Premium+Website+Build" class="btn-outline">Talk to us →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MONTHLY -->
+    <section class="section alt-section" id="monthly">
+      <div class="section-inner">
+        <div class="reveal">
+          <span class="eyebrow">Monthly — ongoing</span>
+          <h2>Keep everything running.<br>Hands-free.</h2>
+        </div>
+
+        <div class="monthly-grid reveal">
+
+          <!-- Hosting & maintenance -->
+          <div class="monthly-card">
+            <div class="monthly-header">
+              <div>
+                <div class="monthly-name">Hosting &amp; Maintenance</div>
+                <p class="monthly-desc">We keep your site live, secure, and backed up. Completely hands-free for you — updates, security patches, uptime monitoring, all covered.</p>
+                <div class="monthly-terms">12-month initial contract, then rolling monthly — cancel any time after that.</div>
+              </div>
+              <div class="monthly-price">£40<span>/mo</span></div>
+            </div>
+          </div>
+
+          <!-- Email hosting -->
+          <div class="monthly-card">
+            <div class="monthly-header">
+              <div>
+                <div class="monthly-name">Email Hosting</div>
+                <p class="monthly-desc">We manage your branded mailbox — so you stay on <strong>you@yourbusiness.co.uk</strong> without touching a thing. Includes spam filtering and storage management.</p>
+                <div class="monthly-terms">12-month initial contract, then rolling monthly — cancel any time after that.</div>
+              </div>
+              <div class="monthly-price">£20<span>/mo</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ONE-TIME ADD-ONS -->
+    <section class="section" id="addons">
+      <div class="section-inner">
+        <div class="reveal">
+          <span class="eyebrow">One-time add-ons</span>
+          <h2>A few things worth<br>adding from the start.</h2>
+        </div>
+
+        <div class="addon-list reveal">
+
+          <div class="addon-card">
+            <div class="addon-left">
+              <div class="addon-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="addon-name">Branded Email Setup</div>
+                <p class="addon-desc">Your own professional email on your domain — includes a bespoke email signature, fully set up and ready to go.</p>
+              </div>
+            </div>
+            <div class="addon-price">£199</div>
+          </div>
+
+          <div class="addon-card">
+            <div class="addon-left">
+              <div class="addon-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="addon-name">Google Business Profile Setup</div>
+                <p class="addon-desc">Get found on Google Maps and local search — fully set up, verified, and optimised for your area and services.</p>
+              </div>
+            </div>
+            <div class="addon-price">£99</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL CONTENT -->
+    <section class="section alt-section" id="social">
+      <div class="section-inner">
+        <div class="reveal">
+          <span class="eyebrow">Social media content</span>
+          <h2>Posts written.<br>Ready to publish.</h2>
+          <p class="section-sub">We're not a full social media management agency — but we know most local businesses just need good content to post, written by people who understand their trade. That's what we offer.</p>
+        </div>
+
+        <div class="social-grid reveal">
+
+          <div class="social-card">
+            <div class="social-card-top">
+              <div class="social-name">Launch Pack</div>
+              <div class="social-count">5 posts</div>
+            </div>
+            <div class="social-price">£149<span class="social-freq">one-time</span></div>
+            <p class="social-desc">Everything you need to announce your new website — captions and hashtags written, ready to copy and post across your channels.</p>
+            <a href="/contact?service=Social+Launch+Pack" class="btn-outline social-btn">Enquire →</a>
+          </div>
+
+          <div class="social-card featured-social">
+            <div class="social-card-bar"></div>
+            <div class="social-card-top">
+              <div class="social-name">Content Pack</div>
+              <div class="social-count">10 posts</div>
+            </div>
+            <div class="social-price">£249<span class="social-freq">one-time</span></div>
+            <p class="social-desc">A month of varied content — promotions, before &amp; afters, trust signals, engagement — written for your business and ready to go.</p>
+            <a href="/contact?service=Social+Content+Pack" class="btn-primary social-btn">Enquire →</a>
+          </div>
+
+        </div>
+
+        <p class="social-note reveal">Need something ongoing? <a href="/contact">Get in touch</a> — we can put together a monthly content plan.</p>
+      </div>
+    </section>
+
+    <!-- COMING SOON — AI CHAT -->
+    <section class="section" id="ai-chat">
+      <div class="section-inner">
+        <div class="coming-soon-card reveal">
+          <div class="cs-left">
+            <div class="cs-badge">Coming soon</div>
+            <div class="cs-name">AI Chat Assistant</div>
+            <p class="cs-desc">An intelligent chat widget for your website — answers common questions, captures leads, and qualifies enquiries automatically. Works around the clock so you don't have to.</p>
+            <div class="cs-features">
+              <span>Answers FAQs 24/7</span>
+              <span>Captures leads while you sleep</span>
+              <span>Trained on your business</span>
+              <span>No monthly AI subscription needed</span>
+            </div>
+          </div>
+          <div class="cs-right">
+            <div class="cs-price-label">Pricing</div>
+            <div class="cs-price">TBC</div>
+            <a href="/contact?service=AI+Chat+Waitlist" class="btn-outline cs-btn">Join the waitlist →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section alt-section">
+      <div class="section-inner">
+        <div class="reveal">
+          <span class="eyebrow">Common questions</span>
+          <h2>Straight answers.</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>Do prices include VAT?</summary>
+            <p>No — all prices are ex-VAT. Risn is a trading name of OAS Digital Ltd. If VAT applies to your transaction we'll make it clear upfront, before you commit to anything.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What if I just want a website — do I need the monthly plan?</summary>
+            <p>No. The website build is a one-time fee and you can host it yourself if you prefer. The £40/month plan is there for clients who want everything looked after — it's optional but most clients take it for the peace of mind.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How long does a website take to build?</summary>
+            <p>Standard builds are typically live within 14 days of receiving your content. Premium builds with booking systems take a little longer — we'll give you a firm date when you enquire.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I upgrade from Standard to Premium later?</summary>
+            <p>Yes — we'll quote the difference. It's easier to plan for Premium from the start, but we can always add to an existing site.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What do you need from me to get started?</summary>
+            <p>Your logo (or we can advise on one), some photos of your work, and the basics about your business. We'll guide you through exactly what we need — it's a short list.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+      <div class="section-inner cta-inner reveal">
+        <div>
+          <h2>Not sure what you need?</h2>
+          <p class="cta-sub">Tell us about your business and we'll recommend what makes sense — no upselling, just honest advice.</p>
+        </div>
+        <a href="/contact" class="btn-primary">Start a conversation →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</Base>
+
+<style>
+  main { padding-top: 80px; }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.2rem, 7vw, 3.6rem);
+    letter-spacing: -1.5px;
+    line-height: 1.05;
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+
+  h1 em { font-style: normal; color: var(--orange); }
+
+  .hero-sub {
+    font-size: 1.05rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 520px;
+  }
+
+  .section-sub {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 540px;
+    margin-top: 14px;
+  }
+
+  .alt-section { background: var(--charcoal-mid); }
+
+  /* ── Website builds ── */
+  .build-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    margin-top: 40px;
+  }
+
+  .plan-card {
+    background: var(--charcoal-mid);
+    border: 1px solid var(--subtle);
+    border-radius: 12px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .plan-card.featured {
+    border-color: rgba(255,92,0,0.3);
+    background: var(--charcoal-light);
+  }
+
+  .plan-card-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--orange), transparent);
+  }
+
+  .plan-badge {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: var(--orange);
+    font-weight: 600;
+    background: rgba(255,92,0,0.1);
+    border: 1px solid rgba(255,92,0,0.2);
+    padding: 3px 10px;
+    border-radius: 2px;
+    align-self: flex-start;
+    margin-bottom: 8px;
+  }
+
+  .plan-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.4rem;
+  }
+
+  .plan-pages {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+
+  .plan-price {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 1;
+    margin: 8px 0 4px;
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+
+  .plan-price-plus {
+    font-size: 2rem;
+    color: var(--orange);
+  }
+
+  .plan-freq {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: var(--muted);
+    margin-left: 6px;
+  }
+
+  .plan-note {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+
+  .plan-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin: 14px 0 24px;
+    flex: 1;
+  }
+
+  .plan-features li {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.72);
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+
+  .plan-features li::before {
+    content: '';
+    width: 5px; height: 5px;
+    background: var(--orange);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ── Monthly ── */
+  .monthly-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 40px;
+  }
+
+  .monthly-card {
+    background: var(--charcoal);
+    border: 1px solid var(--subtle);
+    border-radius: 10px;
+    padding: 26px 24px;
+  }
+
+  .monthly-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .monthly-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  .monthly-desc {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.7;
+    font-weight: 300;
+    max-width: 520px;
+    margin-bottom: 10px;
+  }
+
+  .monthly-desc strong { color: rgba(255,255,255,0.75); font-weight: 500; }
+
+  .monthly-terms {
+    font-size: 0.76rem;
+    color: rgba(255,255,255,0.28);
+    font-style: italic;
+  }
+
+  .monthly-price {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .monthly-price span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: var(--muted);
+  }
+
+  /* ── Add-ons ── */
+  .addon-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 40px;
+  }
+
+  .addon-card {
+    background: var(--charcoal-mid);
+    border: 1px solid var(--subtle);
+    border-radius: 10px;
+    padding: 22px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    transition: border-color 0.2s;
+  }
+
+  .addon-card:hover { border-color: rgba(255,92,0,0.2); }
+
+  .addon-left {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1;
+  }
+
+  .addon-icon {
+    width: 36px; height: 36px;
+    background: rgba(255,92,0,0.08);
+    border: 1px solid rgba(255,92,0,0.16);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .addon-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .addon-desc {
+    font-size: 0.86rem;
+    color: var(--muted);
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  .addon-price {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* ── Social ── */
+  .social-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    margin-top: 40px;
+  }
+
+  .social-card {
+    background: var(--charcoal);
+    border: 1px solid var(--subtle);
+    border-radius: 12px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .social-card.featured-social {
+    border-color: rgba(255,92,0,0.25);
+  }
+
+  .social-card-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--orange), transparent);
+  }
+
+  .social-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  .social-count {
+    font-size: 0.78rem;
+    color: var(--orange);
+    font-weight: 500;
+    background: rgba(255,92,0,0.1);
+    border: 1px solid rgba(255,92,0,0.2);
+    padding: 3px 10px;
+    border-radius: 2px;
+  }
+
+  .social-price {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 2.2rem;
+    line-height: 1;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+
+  .social-freq {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: var(--muted);
+  }
+
+  .social-desc {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.7;
+    font-weight: 300;
+    flex: 1;
+  }
+
+  .social-btn { justify-content: center; }
+
+  .social-note {
+    margin-top: 20px;
+    font-size: 0.86rem;
+    color: rgba(255,255,255,0.38);
+  }
+
+  .social-note a {
+    color: var(--orange);
+    text-decoration: none;
+  }
+
+  .social-note a:hover { text-decoration: underline; }
+
+  /* ── AI Chat / Coming soon ── */
+  .coming-soon-card {
+    background: var(--charcoal-mid);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .coming-soon-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 20px,
+      rgba(255,255,255,0.012) 20px,
+      rgba(255,255,255,0.012) 21px
+    );
+    pointer-events: none;
+  }
+
+  .cs-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.4);
+    font-weight: 600;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 4px 12px;
+    border-radius: 2px;
+    align-self: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .cs-badge::before {
+    content: '';
+    width: 5px; height: 5px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+  }
+
+  .cs-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,0.55);
+  }
+
+  .cs-desc {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.35);
+    line-height: 1.75;
+    font-weight: 300;
+    max-width: 480px;
+    margin-bottom: 18px;
+  }
+
+  .cs-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .cs-features span {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.28);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 5px 12px;
+    border-radius: 3px;
+  }
+
+  .cs-right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cs-price-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.25);
+    font-weight: 500;
+  }
+
+  .cs-price {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: rgba(255,255,255,0.25);
+    margin-bottom: 8px;
+  }
+
+  .cs-btn {
+    border-color: rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.4);
+    align-self: flex-start;
+  }
+
+  .cs-btn:hover {
+    border-color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.7);
+  }
+
+  /* ── FAQ ── */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--subtle);
+    padding: 0;
+  }
+
+  .faq-item:first-child { border-top: 1px solid var(--subtle); }
+
+  .faq-item summary {
+    padding: 20px 0;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    transition: color 0.2s;
+  }
+
+  .faq-item summary:hover { color: var(--orange); }
+
+  .faq-item summary::after {
+    content: '+';
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--orange);
+    flex-shrink: 0;
+    transition: transform 0.25s;
+  }
+
+  .faq-item[open] summary::after {
+    transform: rotate(45deg);
+  }
+
+  .faq-item p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    padding-bottom: 22px;
+    max-width: 620px;
+  }
+
+  /* ── CTA ── */
+  .cta-section { border-top: 1px solid var(--subtle); }
+
+  .cta-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .cta-sub {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+
+  /* ── Desktop ── */
+  @media (min-width: 768px) {
+    .build-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+    }
+
+    .social-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .coming-soon-card {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cs-right {
+      flex-shrink: 0;
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    .cta-inner {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cta-inner .btn-primary { flex-shrink: 0; }
+  }
+</style>
+
+<script>
+  const ro = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }),
+    { threshold: 0.07 }
+  );
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+</script>

@@ -1,0 +1,312 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base title="Contact — Risn" description="Start a project with Risn. No pressure, no hard sell — just a straight conversation about what's possible for your business.">
+  <Nav currentPage="/contact" />
+
+  <main>
+    <section class="contact-hero section">
+      <div class="section-inner contact-inner">
+        <div class="contact-copy reveal">
+          <span class="eyebrow">Get in touch</span>
+          <h1>Let's talk about<br>your <span class="orange">business</span></h1>
+          <p class="contact-sub">No pressure, no hard sell — just a straight conversation about what's possible. We'll usually reply within one business day.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="detail-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <!-- TODO: Replace with real email address -->
+              <a href="mailto:hello@risn.co.uk">hello@risn.co.uk</a>
+            </div>
+            <div class="contact-detail">
+              <div class="detail-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <span>England & Wales, UK</span>
+            </div>
+          </div>
+        </div>
+
+        <!--
+          Netlify Forms: add data-netlify="true" and a hidden input for the form name.
+          Vercel: swap action for your API route or a service like Formspree / Web3Forms.
+          TODO: Wire up email notification (recommend Netlify Forms + email notification, or Web3Forms for free tier)
+        -->
+        <form
+          class="contact-form reveal"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          id="contactForm"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Your name <span class="req">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+            </div>
+            <div class="form-field">
+              <label for="business">Business name</label>
+              <input type="text" id="business" name="business" placeholder="Smith Roofing Ltd" autocomplete="organization" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="jane@smithroofing.co.uk" required autocomplete="email" />
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="07700 000000" autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="service">What are you interested in?</label>
+            <select id="service" name="service">
+              <option value="">Select a service…</option>
+              <option>Web Design & Development</option>
+              <option>Search Engine Optimisation (SEO)</option>
+              <option>Pay Per Click (PPC)</option>
+              <option>All three / not sure yet</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Tell us about your business <span class="req">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="What does your business do? What's the main challenge you're looking to solve?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary submit-btn">
+            <span class="btn-text">Send it over →</span>
+            <span class="btn-loading" aria-hidden="true">Sending…</span>
+          </button>
+
+          <div class="form-success" id="formSuccess" aria-live="polite">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Thanks! We'll be in touch within one business day.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Base>
+
+<style>
+  main { padding-top: 80px; }
+
+  .contact-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.2rem, 7vw, 3.4rem);
+    letter-spacing: -1.5px;
+    line-height: 1.05;
+    margin-bottom: 18px;
+  }
+
+  .orange { color: var(--orange); }
+
+  .contact-sub {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 420px;
+    margin-bottom: 36px;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .detail-icon {
+    width: 32px; height: 32px;
+    background: rgba(255,92,0,0.1);
+    border: 1px solid rgba(255,92,0,0.2);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    flex-shrink: 0;
+  }
+
+  .contact-detail a,
+  .contact-detail span {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.65);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .contact-detail a:hover { color: var(--white); }
+
+  /* Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .hidden { display: none; }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  label {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.65);
+  }
+
+  .req { color: var(--orange); }
+
+  input, select, textarea {
+    background: var(--charcoal-mid);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+    padding: 13px 16px;
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.92rem;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.2s, background 0.2s;
+    appearance: none;
+  }
+
+  input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.22); }
+  input:focus, select:focus, textarea:focus { border-color: var(--orange); background: var(--charcoal-light); }
+
+  select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='rgba(255,255,255,0.35)' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+  }
+
+  textarea { resize: vertical; min-height: 140px; line-height: 1.7; }
+
+  .submit-btn {
+    justify-content: center;
+    padding: 15px;
+    font-size: 0.96rem;
+    position: relative;
+  }
+
+  .btn-loading { display: none; }
+  .submit-btn.loading .btn-text { display: none; }
+  .submit-btn.loading .btn-loading { display: inline; }
+
+  .form-success {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 18px;
+    background: rgba(255,92,0,0.08);
+    border: 1px solid rgba(255,92,0,0.25);
+    border-radius: 6px;
+    color: var(--orange);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .form-success.show { display: flex; }
+
+  @media (min-width: 768px) {
+    .contact-inner {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 80px;
+    }
+
+    .contact-copy { flex: 0 0 340px; }
+    .contact-form { flex: 1; }
+
+    .form-row { flex-direction: row; }
+    .form-row .form-field { flex: 1; }
+  }
+</style>
+
+<script>
+  const ro = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }),
+    { threshold: 0.07 }
+  );
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+  // Pre-fill from URL params (passed from homepage quick-capture form)
+  const params = new URLSearchParams(window.location.search);
+  ['name', 'email', 'business'].forEach(key => {
+    const val = params.get(key);
+    const el = document.getElementById(key) as HTMLInputElement | null;
+    if (val && el) el.value = val;
+  });
+
+  // Form submission handling (works with Netlify; for Vercel swap for fetch to API route)
+  const form = document.getElementById('contactForm') as HTMLFormElement;
+  const btn = form?.querySelector('.submit-btn') as HTMLButtonElement;
+  const success = document.getElementById('formSuccess');
+
+  form?.addEventListener('submit', async (e) => {
+    // Let Netlify handle the POST natively — only intercept for custom UX
+    if (!form.getAttribute('data-netlify')) return;
+    e.preventDefault();
+    btn.classList.add('loading');
+    btn.disabled = true;
+
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form) as any).toString(),
+      });
+
+      if (res.ok) {
+        form.reset();
+        success?.classList.add('show');
+        btn.style.display = 'none';
+      } else {
+        throw new Error();
+      }
+    } catch {
+      btn.classList.remove('loading');
+      btn.disabled = false;
+      alert('Something went wrong. Please try emailing us directly.');
+    }
+  });
+</script>
