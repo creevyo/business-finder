@@ -5,15 +5,10 @@ import time
 from collections import Counter
 from typing import Dict, List, Optional
 
-import os
-
 import requests
 import streamlit as st
-from dotenv import load_dotenv
 
-load_dotenv()
-
-API_KEY = os.getenv("GOOGLE_PLACES_API_KEY", "")
+API_KEY = "AIzaSyBZh9iyLtTulS6tkPp82ikwBL0Fox_pX2Y"
 
 PLACES_API_BASE = "https://places.googleapis.com/v1"
 
@@ -232,9 +227,6 @@ st.set_page_config(page_title="Find Businesses Without Websites", page_icon="ðŸ”
 st.title("Find Businesses Without Websites")
 st.markdown("Discover local businesses with no online presence â€” ready for cold outreach.")
 
-if not API_KEY:
-    st.error("Missing `GOOGLE_PLACES_API_KEY`. Add it to a `.env` file and restart the app.")
-    st.stop()
 
 st.divider()
 
